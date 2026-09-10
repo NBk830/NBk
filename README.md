@@ -1,2 +1,2 @@
 # NBk830
-NBK – Pashto Business and Entertainment Website
+NBK – Pashto Business and Entertainment Website 
