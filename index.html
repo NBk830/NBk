@@ -1,110 +1,142 @@
 <!DOCTYPE html>
 <html lang="ps" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NBk - کاروبار او تفریح</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBk</title>
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    color: #222;
-    text-align: center;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
 
-header {
-    background: #111;
-    color: white;
-    padding: 35px 20px;
-}
+    header {
+      background: #111;
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+    }
 
-header h1 {
-    margin: 0;
-    font-size: 42px;
-}
+    header h1 {
+      margin: 0;
+      font-size: 38px;
+    }
 
-header p {
-    font-size: 20px;
-}
+    header p {
+      margin: 8px 0 0;
+      font-size: 18px;
+    }
 
-.container {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-}
+    nav {
+      background: #222;
+      text-align: center;
+      padding: 12px;
+    }
 
-.box {
-    background: white;
-    padding: 35px 20px;
-    margin-bottom: 25px;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px #ddd;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 17px;
+    }
 
-.box h2 {
-    font-size: 30px;
-}
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: white;
+    }
 
-.box p {
-    font-size: 19px;
-    line-height: 2;
-}
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
 
-button {
-    background: #111;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-size: 18px;
-}
+    .hero p {
+      font-size: 18px;
+    }
 
-footer {
-    background: #111;
-    color: white;
-    padding: 25px;
-    margin-top: 40px;
-}
-</style>
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 15px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      font-size: 22px;
+    }
+
+    footer {
+      margin-top: 30px;
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
+  <header>
     <h1>NBk</h1>
-    <p>زموږ ویب‌سایت ته ښه راغلاست</p>
-</header>
+    <p>ستاسو د کاروبار او تفریح ویب‌سایټ</p>
+  </header>
 
-<div class="container">
+  <nav>
+    <a href="#home">کور</a>
+    <a href="#business">کاروبار</a>
+    <a href="#entertainment">تفریح</a>
+    <a href="#contact">اړیکه</a>
+  </nav>
 
-    <div class="box">
-        <h2>NBk کاروبار او تفریح</h2>
-        <p>
-            دلته به تاسو زموږ د کاروباري خدمتونو،
-            معلوماتو او تفریحي مطالبو په اړه معلومات ترلاسه کړئ.
-        </p>
-        <button>نور معلومات</button>
+  <section class="hero" id="home">
+    <h2>NBk ویب‌سایټ ته ښه راغلاست</h2>
+    <p>دلته به د کاروبار، معلوماتو او تفریح لپاره مطالب خپرېږي.</p>
+  </section>
+
+  <div class="container">
+
+    <div class="cards">
+
+      <div class="card" id="business">
+        <h3>💼 کاروبار</h3>
+        <p>د کاروبار او بازار اړوند معلومات دلته وګورئ.</p>
+      </div>
+
+      <div class="card" id="entertainment">
+        <h3>🎬 تفریح</h3>
+        <p>په زړه پورې تفریحي مطالب او معلومات.</p>
+      </div>
+
+      <div class="card">
+        <h3>📰 معلومات</h3>
+        <p>نوي او ګټور معلومات په ساده پښتو.</p>
+      </div>
+
     </div>
 
-    <div class="box">
-        <h2>زموږ خدمتونه</h2>
-        <p>
-            کاروبار، معلومات، تفریح او نورې ګټورې برخې.
-        </p>
-    </div>
+  </div>
 
-    <div class="box">
-        <h2>اړیکه</h2>
-        <p>ایمیل: info@nbk.com</p>
-    </div>
-
-</div>
-
-<footer>
-    © 2026 NBk - ټول حقوق خوندي دي
-</footer>
+  <footer id="contact">
+    <p>© 2026 NBk - ټول حقوق خوندي دي</p>
+  </footer>
 
 </body>
 </html>
