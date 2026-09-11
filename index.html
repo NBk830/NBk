@@ -1,142 +1,66 @@
 <!DOCTYPE html>
 <html lang="ps" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NBk</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
-    }
-
-    header {
-      background: #111;
-      color: white;
-      padding: 25px 15px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 38px;
-    }
-
-    header p {
-      margin: 8px 0 0;
-      font-size: 18px;
-    }
-
-    nav {
-      background: #222;
-      text-align: center;
-      padding: 12px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 12px;
-      font-size: 17px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-      background: white;
-    }
-
-    .hero h2 {
-      font-size: 30px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px 15px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    .card h3 {
-      font-size: 22px;
-    }
-
-    footer {
-      margin-top: 30px;
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBk</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f2f2f2;color:#222}
+header{background:#111;color:white;text-align:center;padding:35px}
+h1{font-size:42px;margin:0}
+nav{background:#333;text-align:center;padding:15px}
+nav a{color:white;text-decoration:none;margin:10px}
+section{background:white;margin:20px auto;padding:30px;max-width:800px;text-align:center;border-radius:12px}
+.card{display:inline-block;width:200px;margin:10px;padding:25px;background:#f5f5f5;border-radius:10px}
+footer{background:#111;color:white;text-align:center;padding:20px}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>NBk</h1>
-    <p>ستاسو د کاروبار او تفریح ویب‌سایټ</p>
-  </header>
+<header>
+<h1>NBk</h1>
+<p>کاروبار او تفریح</p>
+</header>
 
-  <nav>
-    <a href="#home">کور</a>
-    <a href="#business">کاروبار</a>
-    <a href="#entertainment">تفریح</a>
-    <a href="#contact">اړیکه</a>
-  </nav>
+<nav>
+<a href="#home">کور</a>
+<a href="#services">زموږ خدمتونه</a>
+<a href="#contact">اړیکه</a>
+</nav>
 
-  <section class="hero" id="home">
-    <h2>NBk ویب‌سایټ ته ښه راغلاست</h2>
-    <p>دلته به د کاروبار، معلوماتو او تفریح لپاره مطالب خپرېږي.</p>
-  </section>
+<section id="home">
+<h2>NBk ویب‌سایټ ته ښه راغلاست</h2>
+<p>د کاروبار او تفریح لپاره ستاسو ویب‌سایټ</p>
+</section>
 
-  <div class="container">
+<section id="services">
+<h2>زموږ خدمتونه</h2>
 
-    <div class="cards">
+<div class="card">
+<h3>💼 کاروبار</h3>
+<p>د کاروبار معلومات</p>
+</div>
 
-      <div class="card" id="business">
-        <h3>💼 کاروبار</h3>
-        <p>د کاروبار او بازار اړوند معلومات دلته وګورئ.</p>
-      </div>
+<div class="card">
+<h3>🎬 تفریح</h3>
+<p>تفریحي مطالب</p>
+</div>
 
-      <div class="card" id="entertainment">
-        <h3>🎬 تفریح</h3>
-        <p>په زړه پورې تفریحي مطالب او معلومات.</p>
-      </div>
+<div class="card">
+<h3>📰 معلومات</h3>
+<p>ګټور معلومات</p>
+</div>
+</section>
 
-      <div class="card">
-        <h3>📰 معلومات</h3>
-        <p>نوي او ګټور معلومات په ساده پښتو.</p>
-      </div>
+<section id="contact">
+<h2>اړیکه</h2>
+<p>دلته به زموږ د اړیکې معلومات وي.</p>
+</section>
 
-    </div>
-
-  </div>
-
-  <footer id="contact">
-    <p>© 2026 NBk - ټول حقوق خوندي دي</p>
-  </footer>
+<footer>
+<p>© 2026 NBk</p>
+</footer>
 
 </body>
 </html>
